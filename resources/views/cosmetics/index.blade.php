@@ -1,4 +1,7 @@
-<h1>コスメ一覧</h1>
+@extends('layouts.app')
+
+@section('content')
+<h1 class="text-2xl font-bold mb-4">コスメ一覧</h1>
 
 @if(session('success'))
 <p>{{ session('success') }}</p>
@@ -29,4 +32,4 @@
     </tbody>
 </table>
 
-<p><a href="{{ route('cosmetics.create') }}">新しくコスメを登録する</a></p>
+@endsection
