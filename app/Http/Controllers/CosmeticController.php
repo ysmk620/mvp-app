@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Models\Cosmetic;
@@ -23,5 +24,11 @@ class CosmeticController extends Controller
         Cosmetic::create($validated);
 
         return redirect()->route('cosmetics.create')->with('success', 'コスメを登録しました');
+    }
+
+    public function index()
+    {
+        $cosmetics = Cosmetic::all();
+        return view('cosmetics.index', compact('cosmetics'));
     }
 }
