@@ -19,8 +19,19 @@
         <input type="text" name="brand" class="w-full border rounded px-3 py-2">
     </div>
     <div class="mb-4">
-        <label class="block mb-1">カテゴリ</label>
-        <input type="text" name="category" class="w-full border rounded px-3 py-2">
+        <label for="category_id" class="block text-sm font-medium text-gray-700">カテゴリ</label>
+        <select name="category_id" id="category_id"
+            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+            <option value="">選択してください</option>
+            @foreach($categories as $category)
+            <option value="{{ $category->id ?? $category }}">
+                {{ $category->name ?? $category }}
+            </option>
+            @endforeach
+        </select>
+        @error('category_id')
+        <p class="text-red-600 text-sm mt-1">{{ $message }}</p>
+        @enderror
     </div>
     <div class="mb-6">
         <label class="block mb-1">使用期限</label>
