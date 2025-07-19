@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 Route::get('/cosmetics/create', [CosmeticController::class, 'create'])->name('cosmetics.create');
 Route::post('/cosmetics', [CosmeticController::class, 'store'])->name('cosmetics.store');
+
+Route::get('/cosmetics', [CosmeticController::class, 'index'])->name('cosmetics.index');
