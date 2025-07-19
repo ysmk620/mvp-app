@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Cosmetic;
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class CosmeticController extends Controller
 {
     public function create()
     {
-        return view('cosmetics.create');
+        $categories = Category::orderBy('sort_order', 'asc')->get();
+        return view('cosmetics.create', compact('categories'));
     }
 
     public function store(Request $request)
