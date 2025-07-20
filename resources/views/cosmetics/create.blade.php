@@ -19,9 +19,9 @@
         <input type="text" name="brand" class="w-full border rounded px-3 py-2">
     </div>
     <div class="mb-4">
-        <label for="category_id" class="block text-sm font-medium text-gray-700">カテゴリ</label>
+        <label for="category_id" class="block mb-1">カテゴリ</label>
         <select name="category_id" id="category_id"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+            class="w-full border rounded px-3 py-2">
             <option value="">選択してください</option>
             @foreach($categories as $category)
             <option value="{{ $category->id ?? $category }}">

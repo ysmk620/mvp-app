@@ -30,7 +30,7 @@ class CosmeticController extends Controller
 
     public function index()
     {
-        $cosmetics = Cosmetic::all();
+        $cosmetics = Cosmetic::with('category')->get();
         return view('cosmetics.index', compact('cosmetics'));
     }
 }
