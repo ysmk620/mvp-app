@@ -19,7 +19,7 @@ class CosmeticController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'brand' => 'nullable|string|max:255',
-            'category' => 'nullable|string|max:255',
+            'category_id' => 'required|exists:categories,id',
             'expiration_date' => 'nullable|date',
         ]);
 
