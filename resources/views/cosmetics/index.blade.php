@@ -25,7 +25,7 @@
                 >
                 <td>{{ $cosmetic->name }}</td>
                 <td>{{ $cosmetic->brand }}</td>
-                <td>{{ $cosmetic->category }}</td>
+                <td>{{ $cosmetic->category->name ?? '未設定' }}</td>
                 <td>{{ $cosmetic->expiration_date }}</td>
         </tr>
         @endforeach
