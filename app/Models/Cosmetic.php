@@ -9,7 +9,12 @@ class Cosmetic extends Model
     protected $fillable = [
         'name',
         'brand',
-        'category',
+        'category_id',
         'expiration_date',
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
