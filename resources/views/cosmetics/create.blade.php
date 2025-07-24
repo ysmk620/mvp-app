@@ -2,7 +2,7 @@
 
 @section('content')
   <div class="max-w-md mx-auto space-y-6">
-    <h2 class="text-3xl font-bold text-center text-primary">新規登録</h2>
+    <h2 class="text-3xl font-bold text-center text-primary">コスメ登録</h2>
 
     @if(session('success'))
       <div class="p-4 bg-primary/30 text-textcolor rounded-lg shadow">
