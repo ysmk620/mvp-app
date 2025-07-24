@@ -11,13 +11,13 @@
     @endif
 
     <div class="overflow-x-auto bg-white/60 backdrop-blur-sm rounded-2xl shadow-lg">
-        <table class="min-w-full divide-y divide-gray-200">
+        <table class="min-w-full divide-y divide-gray-200 table-auto">
             <thead class="bg-secondary/80">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-medium text-text text-opacity-80">商品名</th>
-                    <th class="px-6 py-3 text-left text-sm font-medium text-text text-opacity-80">ブランド</th>
-                    <th class="px-6 py-3 text-left text-sm font-medium text-text text-opacity-80">カテゴリ</th>
-                    <th class="px-6 py-3 text-left text-sm font-medium text-text text-opacity-80">使用期限</th>
+                    <th class="px-6 py-3 text-left text-sm font-medium text-text text-opacity-80 w-36">ブランド</th>
+                    <th class="px-6 py-3 text-left text-sm font-medium text-text text-opacity-80 w-36">カテゴリ</th>
+                    <th class="px-6 py-3 text-left text-sm font-medium text-text text-opacity-80 w-36">使用期限</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-100">
