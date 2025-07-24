@@ -16,7 +16,7 @@
 
       {{-- 商品名 --}}
       <div>
-        <label class="block mb-1 font-medium">商品名</label>
+        <label class="block mb-1 font-medium text-text text-opacity-80">商品名</label>
         <input type="text" name="name" required
                class="w-full border border-primary rounded-lg px-4 py-2
                       focus:outline-none focus:ring-2 focus:ring-primary/50">
@@ -24,7 +24,7 @@
 
       {{-- ブランド --}}
       <div>
-        <label class="block mb-1 font-medium">ブランド</label>
+        <label class="block mb-1 font-medium text-text text-opacity-80">ブランド</label>
         <input type="text" name="brand"
                class="w-full border border-primary rounded-lg px-4 py-2
                       focus:outline-none focus:ring-2 focus:ring-primary/50">
@@ -32,7 +32,7 @@
 
       {{-- カテゴリ --}}
       <div>
-        <label class="block mb-1 font-medium">カテゴリ</label>
+        <label class="block mb-1 font-medium text-text text-opacity-80">カテゴリ</label>
         <select name="category_id"
                 class="w-full border border-primary rounded-lg px-4 py-2
                        focus:outline-none focus:ring-2 focus:ring-primary/50">
@@ -48,7 +48,7 @@
 
       {{-- 使用期限 --}}
       <div>
-        <label class="block mb-1 font-medium">使用期限</label>
+        <label class="block mb-1 font-medium text-text text-opacity-80">使用期限</label>
         <input type="date" name="expiration_date"
                class="w-full border border-primary rounded-lg px-4 py-2
                       focus:outline-none focus:ring-2 focus:ring-primary/50">

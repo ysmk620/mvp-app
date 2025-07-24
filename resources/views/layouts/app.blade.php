@@ -20,7 +20,7 @@
                 <ul class="flex space-x-4">
                     <li>
                         <a href="{{ route('cosmetics.index') }}"
-                            class="px-3 py-2 rounded-lg transition
+                            class="px-3 py-2 rounded-lg transition text-text text-opacity-80
                       {{ request()->routeIs('cosmetics.index')
                          ? 'bg-primary/50 font-semibold text-white'
                          : 'hover:bg-secondary' }}">
@@ -29,7 +29,7 @@
                     </li>
                     <li>
                         <a href="{{ route('cosmetics.create') }}"
-                            class="px-3 py-2 rounded-lg transition
+                            class="px-3 py-2 rounded-lg transition text-text text-opacity-80
                       {{ request()->routeIs('cosmetics.create')
                          ? 'bg-primary/50 font-semibold text-white'
                          : 'hover:bg-secondary' }}">
