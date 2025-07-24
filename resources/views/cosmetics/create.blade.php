@@ -5,7 +5,7 @@
     <h2 class="text-3xl font-bold text-center text-primary">コスメ登録</h2>
 
     @if(session('success'))
-      <div class="p-4 bg-primary/30 text-textcolor rounded-lg shadow">
+      <div class="p-4 bg-primary/30 text-text rounded-lg shadow">
         {{ session('success') }}
       </div>
     @endif

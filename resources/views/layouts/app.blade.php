@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans bg-bgcolor text-textcolor min-h-screen flex flex-col">
+<body class="font-sans text-text min-h-screen flex flex-col">
 
     <header class="bg-secondary/80 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">

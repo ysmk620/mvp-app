@@ -30,6 +30,9 @@
     h6 {
         font-family: var(--font-heading);
     }
+    body {
+        background-color: var(--color-bg);
+    }
 }
 
 @plugin '@tailwindcss/typography';
