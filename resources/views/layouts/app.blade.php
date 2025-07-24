@@ -1,3 +1,4 @@
+<!-- resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -5,26 +6,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コスメ管理アプリ(MVP)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gray-50 min-h-screen flex flex-col">
-    <header class="bg-white shadow">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <h1 class="text-xl font-bold">
+<body class="font-sans text-text min-h-screen flex flex-col">
+
+    <header class="bg-secondary/80 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary">
                 <a href="{{ route('cosmetics.index') }}">コスメ管理</a>
             </h1>
             <nav>
                 <ul class="flex space-x-4">
                     <li>
                         <a href="{{ route('cosmetics.index') }}"
-                            class="px-2 py-1 rounded hover:bg-gray-100 {{ request()->routeIs('cosmetics.index') ? 'bg-gray-200 font-semibold' : '' }}">
+                            class="px-3 py-2 rounded-lg transition text-text text-opacity-80
+                      {{ request()->routeIs('cosmetics.index')
+                         ? 'bg-primary/50 font-semibold text-white'
+                         : 'hover:bg-secondary' }}">
                             一覧
                         </a>
                     </li>
                     <li>
                         <a href="{{ route('cosmetics.create') }}"
-                            class="px-2 py-1 rounded hover:bg-gray-100 {{ request()->routeIs('cosmetics.create') ? 'bg-gray-200 font-semibold' : '' }}">
+                            class="px-3 py-2 rounded-lg transition text-text text-opacity-80
+                      {{ request()->routeIs('cosmetics.create')
+                         ? 'bg-primary/50 font-semibold text-white'
+                         : 'hover:bg-secondary' }}">
                             登録
                         </a>
                     </li>
@@ -32,9 +40,11 @@
             </nav>
         </div>
     </header>
-    <main class="container mx-auto px-4">
+
+    <main class="container mx-auto px-6 py-10 flex-1">
         @yield('content')
     </main>
+
 </body>
 
 </html>
