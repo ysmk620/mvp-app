@@ -11,6 +11,7 @@ class Cosmetic extends Model
         'brand',
         'category_id',
         'expiration_date',
+        'emoji',
     ];
 
     public function category()
