@@ -21,6 +21,7 @@ class CosmeticController extends Controller
             'brand' => 'nullable|string|max:255',
             'category_id' => 'required|exists:categories,id',
             'expiration_date' => 'nullable|date',
+            'emoji'=> 'nullable|string|max:4',
         ]);
 
         Cosmetic::create($validated);
