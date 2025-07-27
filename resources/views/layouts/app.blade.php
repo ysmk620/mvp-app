@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コスメ管理アプリ(MVP)</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('16355_paint.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -14,7 +15,10 @@
     <header class="bg-secondary/80 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-primary">
-                <a href="{{ route('cosmetics.index') }}">コスメ管理</a>
+                <a href="{{ route('cosmetics.index') }}" class="flex items-center">
+                    <img src="{{ asset('16355_paint.png') }}" alt="コスメ管理アイコン" class="h-6 w-6 mr-2 flex-shrink-0">
+                    コスメ管理
+                </a>
             </h1>
             <nav>
                 <ul class="flex space-x-4">
